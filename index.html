@@ -8,14 +8,24 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
     header,
-    header .row {
+    header .row,
+    footer {
       background-color: #110133;
       min-height: 5em;
     }
 
+    .bold {
+      font-weight: bold;
+    }
+
+    body,
+    .parks {
+      background-color: rgb(250, 250, 250);
+    }
+
     .card {
       box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.15);
-      min-width: 18em;
+      min-width: 17em;
       max-width: 20em;
       margin-bottom: 0.6rem;
     }
@@ -48,6 +58,12 @@
         width: 80%;
       }
     }
+
+    @media only screen and (min-width: 1800px) {
+      footer {
+        margin-top: 3em;
+      }
+    }
   </style>
 </head>
 
@@ -68,7 +84,7 @@
     </div>
   </header>
   <main class="container-fluid pt-2 pb-2">
-    <div class="row justify-content-center">
+    <div class="row parks justify-content-center">
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card mx-auto">
           <img
@@ -171,6 +187,7 @@
         </div>
       </div>
     </div>
+    <hr class="m-0">
     <div class="row details align-items-center pt-3 text-center">
       <div class="col-12">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/BadlandsView3.jpg" alt="Badlands photo">
@@ -178,23 +195,25 @@
       <div class="col-12">
         <h2>South Dakota</h2>
       </div>
-      <div class="col-12 col-md-10 mx-auto">
+      <div class="col-12 col-md-10 mx-auto pt-2 pb-2">
         <p>The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies. The White River
           Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils. The wildlife
           includes bison, bighorn sheep, black-footed ferrets, and prairie dogs.</p>
       </div>
-      <div class="col-12 border col-md-4 pt-2 pb">
+      <div class="col-12 border bold col-md-4 pt-3 pb-3">
         <p>Established": "November 10, 1978"</p>
       </div>
-      <div class="col-12 border col-md-4 pt-2 pb">
+      <div class="col-12 border bold col-md-4 pt-3 pb-3">
         <p>Area": "242,755.94 acres (982.4 km2)</p>
       </div>
-      <div class="col-12 border col-md-4 pt-2 pb">
+      <div class="col-12 border bold col-md-4 pt-3 pb-3">
         <p>Recreation visitors": "1,008,942</p>
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer>
+    <p>National Parks</p>
+  </footer>
 
 </body>
 
